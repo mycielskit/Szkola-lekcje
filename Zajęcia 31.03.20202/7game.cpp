@@ -11,20 +11,20 @@ int main()
     while(1)
     {
         liczba = (rand()%1001);
-        cout << "Zgadnij wartość liczby.\n";
+        cout << "Guess the value of a number.\n";
         for(attempts = 0; n != liczba; attempts++)
         {
             cin >> n;
             if(n > liczba)
-                cout << "Za dużo\n";
+                cout << "Too large\n";
             else if(n < liczba)
-                cout << "Za mało\n";
+                cout << "Too small\n";
         }
-        cout << "Gratulacje! Zgadłeś po " << attempts << " próbach.\nCzy chcesz zagrać ponownie? T/N\n";
+        cout << "Congratulations! You guessed after " << attempts << " attempts.\nDo you want to play again? Y/N\n";
         cin >> play;
-        while(play != 't' && play != 'T' && play != 'n' && play != 'N')
+        while(play != 'y' && play != 'Y' && play != 'n' && play != 'N')
         {
-            cout << "Wczytano złą wartość, spróbuj ponownie.\n";
+            cout << "Incorrect symbol, please try again.\n";
             cin >> play;
         }
         if(play == 'n' || play == 'N')
