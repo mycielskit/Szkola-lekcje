@@ -5,7 +5,13 @@ using namespace std;
 string isPrime(int a)
 {
     if(a % 2 == 0)
-        return "NIE";
+    {
+        if(a == 2)
+            return "TAK";
+        else
+            return "NIE";
+        
+    }
     for(int i = 3; a >= i*i; i += 2)
     {
         if(a % i == 0)
