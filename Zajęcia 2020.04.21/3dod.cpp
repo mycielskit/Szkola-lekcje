@@ -20,7 +20,7 @@ int main()
     l2 *= g / m2;//licznik 2
     l1 += l2;//suma liczników
     l2 = gcd(l1, g);//gcd licznika i mianownika
-    l1 /= l2;//podziel mianownik przez gcd
+    l1 /= l2;//podziel licznik przez gcd
     g /= l2;//podziel mianownik przez gcd
     if(l1 / g)//jeśli jest liczba całkowita
         cout << l1 / g << ' ';
