@@ -14,12 +14,12 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     int l1, l2, m1, m2, g;
-    cin >> l1 >> m1 >> l2 >> m2;
-    g = m1 * m2 / gcd(m1, m2);
-    l1 *= g / m1;
-    l2 *= g / m2;
-    l1 += l2;
-    l2 = gcd(l1, g);
+    cin >> l1 >> m1 >> l2 >> m2;//input
+    g = m1 * m2 / gcd(m1, m2);//lcm
+    l1 *= g / m1;//licznik 1
+    l2 *= g / m2;//licznik 2
+    l1 += l2;//suma liczników
+    l2 = gcd(l1, g);//gcd licznika i mianownika
     l1 /= l2;
     g /= l2;
     if(l1 / g)
