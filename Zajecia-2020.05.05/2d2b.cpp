@@ -5,11 +5,9 @@ using namespace std;
 string dec2bin(int n)
 {
     string out = "";
-    while(n)
-    {
+    do
         out += (n % 2) ? '1' : '0';//if/else
-        n /= 2;
-    }
+    while(n /= 2);
     reverse(out.begin(), out.end());
     return out;
 }
