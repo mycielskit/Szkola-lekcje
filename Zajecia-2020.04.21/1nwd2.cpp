@@ -11,7 +11,7 @@ int gcd(int a, int b)
 
 int main()
 {
-    ios::sync_with_stdio(false);
+    ios::sync_with_stdio(0);
     cin.tie(NULL);
     int a, b;
     cin >> a >> b;

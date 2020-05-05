@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    ios::sync_with_stdio(false);
+    ios::sync_with_stdio(0);
     cin.tie(NULL);
     string a, b; cin >> a; b = a;
     reverse(a.begin(), a.end());

@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    ios::sync_with_stdio(false);
+    ios::sync_with_stdio(0);
     cin.tie(NULL);//nitro
     float a;
     while(cin >> a)//dunno how many inputs there are ¯\_(ツ)_/¯

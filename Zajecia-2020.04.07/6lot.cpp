@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    ios::sync_with_stdio(false);
+    ios::sync_with_stdio(0);
     srand(time(0));
     int a[6];
     for(int i = 0; i < 6; ++i)
