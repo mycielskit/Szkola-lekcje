@@ -5,11 +5,9 @@ using namespace std;
 string dec2hex(int n)
 {
     string a = "";
-    while(n)
-    {
+    do
         a += (n % 16 > 9 ? char(n % 16 + 55) : char(n % 16 + 48));
-        n /= 16;
-    }
+    while(n /= 16);
     reverse(a.begin(), a.end());
     return a;
 }
