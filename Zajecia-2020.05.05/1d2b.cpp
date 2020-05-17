@@ -7,10 +7,8 @@ int main()
     ios::sync_with_stdio(0);
     cin.tie(NULL);
     int n; cin >> n;
-    while(n)
-    {
+    do
         cout << n % 2 << endl;
-        n /= 2;
-    }
+    while(n /= 2);
     return 0;
 }
