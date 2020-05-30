@@ -27,7 +27,7 @@ int main()
     short a; int n; string out;
     cin >> a >> n;
     if(pow(2, (8*a - 1)) < abs(n))
-        cout << "ERROR";
+        cout << "ERROR";//checks whether the number fits within the bytes
     else
     {
         out = dec2bin(abs(n));
