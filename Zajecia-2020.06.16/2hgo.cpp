@@ -10,7 +10,6 @@ bool isPrime(int a)
             return 1;
         else
             return 0;
-        
     }
     for(int i = 3; a >= i*i; i += 2)
     {
