@@ -1,2 +1,2 @@
-# Lekcje-klasa-1aG
+# Szkola-lekcje
 Nie kradnijcie za bardzo, dziękuję
