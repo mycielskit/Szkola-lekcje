@@ -11,7 +11,7 @@ void sortint(short *a, short *b, short *c)
 int main()
 {
     short a, b, c, d, e, f, i1, i2, i3; cin >> a >> b >> c >> d >> e >> f;
-    short track[2*b] = {};
+    short track[-2*b] = {};
     d *= -1;
     string grid[a][d];
     while(1)
