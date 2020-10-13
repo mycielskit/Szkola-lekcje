@@ -2,10 +2,11 @@
 
 using namespace std;
 
-void sortint(short *a, short *b, short *c)
+string sorted(string in)
 {
-    
-    return;
+    if(in.size() > 1)
+        sort(in.begin(), in.end());
+    return in;
 }
 
 int main()
@@ -22,7 +23,7 @@ int main()
         if(-i1 > d || -i3 > d)
             continue;
         if(i2 < 0)
-            grid[i3 - 1][-i1 - 1] += "U";
+            grid[-i3 - 1][i1 - 1] += "U";
         else
         {
             grid[i2 - 1][-i1 - 1] += "R";
@@ -32,7 +33,7 @@ int main()
     short tracki = 0, x = c - 1, y = d - 1;
     while(1)
     {
-        sort(grid[x][y].begin(), grid[x][y].end());
+        grid[x][y] = sorted(grid[x][y]);
         if(x == e - 1 && y == -f - 1)
             break;
         if(grid[x][y].size() > 2)
