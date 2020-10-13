@@ -2,13 +2,6 @@
 
 using namespace std;
 
-string sorted(string in)
-{
-    if(in.size() > 1)
-        sort(in.begin(), in.end());
-    return in;
-}
-
 int main()
 {
     short a, b, c, d, e, f, i1, i2, i3; cin >> a >> b >> c >> d >> e >> f;
@@ -33,14 +26,14 @@ int main()
     short tracki = 0, x = c - 1, y = d - 1;
     while(1)
     {
-        grid[x][y] = sorted(grid[x][y]);
+        sort(grid[x][y].begin(), grid[x][y].end());
         if(x == e - 1 && y == -f - 1)
             break;
         if(grid[x][y].size() > 2)
             switch(track[--tracki])
             {
                 case 1: x++; grid[x][y] += 'L'; break;
-                case 2: y--; grid[x][y] += 'U'; break;
+                case 2: y++; grid[x][y] += 'U'; break;
                 case 3: x--; grid[x][y] += 'R'; break;
             }
         else if(grid[x][y][0] != 'L')
@@ -55,7 +48,7 @@ int main()
         }
         else
         {
-            y++;
+            y--;
             track[tracki++] = 2;
         }
     }
