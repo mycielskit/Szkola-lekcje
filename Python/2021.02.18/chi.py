@@ -1,0 +1,1 @@
+print(input()*0 + str(input().rstrip().split().count('6')))

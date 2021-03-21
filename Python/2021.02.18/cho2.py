@@ -1,0 +1,2 @@
+a = int(input().rstrip()) # print(str(a := int(input().rstrip())) * 0 + '\n'.join(2 * [((a - i) * ' ' + (2 * i + 1) * '*') for i in range(a)] + [(2 * a + 1) * '*']))
+print('\n'.join(2 * [((a - i) * ' ' + (2 * i + 1) * '*') for i in range(a)] + [(2 * a + 1) * '*']))
