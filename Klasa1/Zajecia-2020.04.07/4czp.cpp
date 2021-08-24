@@ -4,7 +4,7 @@ using namespace std;
 
 string isPrime(int a)
 {
-    if(a % 2 == 0)
+    if(!(a & 1))
     {
         if(a == 2)
             return "TAK";
