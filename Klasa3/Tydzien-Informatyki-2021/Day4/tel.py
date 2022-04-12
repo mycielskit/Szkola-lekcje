@@ -1,0 +1,1 @@
+[print(chr(int(i, 2)), end='') for i in input().rstrip().split(' ')]
